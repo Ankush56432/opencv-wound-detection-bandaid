@@ -26,26 +26,14 @@ This project demonstrates practical knowledge of:
 
 <p align="center">
 
-<img src="images/output.png" width="500">
+<img src="images/output.png" width="550">
 </p>
 
 Left: Original arm image  
 Right: Band-Aid automatically placed on wound
 
 ---
-
-# 🎥 Demo GIF (Optional)
-
-You can also add a demo GIF:
-
-<p align="center">
-  <img src="images/demo.gif" width="700">
-</p>
-
----
-
 # 🚀 Features
-
 ✔ Automatic wound detection  
 ✔ HSV color segmentation  
 ✔ Morphological noise removal  
@@ -58,3 +46,38 @@ You can also add a demo GIF:
 ---
 
 # 🧠 Algorithm Pipeline
+Input Image
+↓
+Convert RGB → HSV
+↓
+Red Color Segmentation
+↓
+Morphological Noise Removal
+↓
+Contour Detection
+↓
+Find Largest Wound Region
+↓
+Compute Position & Rotation
+↓
+Resize + Rotate Band-Aid
+↓
+Overlay Using Alpha Channel
+↓
+Final Output
+
+# 📂 Project Structure
+wound-detection-opencv
+│
+├── wound_detection.py
+├── arm.webp
+├── bandaid.png
+│
+├── images
+│ ├── project-banner.png
+│ ├── original.png
+│ ├── result.png
+│ └── demo.gif
+│
+└── README.md
+
