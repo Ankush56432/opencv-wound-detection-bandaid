@@ -25,8 +25,8 @@ This project demonstrates practical knowledge of:
 ### Input → Output
 
 <p align="center">
-<img src="images/arm.png" width="350">
-<img src="images/output.png" width="350">
+
+<img src="images/output.png" width="500">
 </p>
 
 Left: Original arm image  
